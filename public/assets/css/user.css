@@ -1,0 +1,34 @@
+.manage-user .left {
+  width: 30%;
+}
+.manage-user .left .user .avatar {
+  background-color: #ecf0f1;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+}
+.manage-user .right {
+  width: 68%;
+}
+.password {
+  position: relative;
+}
+.password .input-password {
+  padding-right: 50px;
+  padding-left: 10px;
+}
+.password i {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .manage-user .left, .manage-user .right {
+    width: 100%;
+  }
+  .manage-user .right {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=manage-user.css.map */

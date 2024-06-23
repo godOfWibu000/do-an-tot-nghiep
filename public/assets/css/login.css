@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+main {
+  background-image: url(https://cdn.sforum.vn/sforum/wp-content/uploads/2022/07/1-12.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+main .login {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+}
+main .login .form-login {
+  height: 100vh;
+  width: 50%;
+  margin: auto;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .login .form-login #alert-login {
+  position: absolute;
+  transform: translateY(-120%);
+  top: 10px;
+  right: 0;
+  left: 0;
+  animation-name: alertLogin;
+  animation-duration: 3s;
+}
+main .login .form-login form {
+  margin-top: 50px;
+}
+main .login .form-login form .form-item {
+  position: relative;
+}
+main .login .form-login form .form-item input {
+  background: none;
+  border: none;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  padding: 0 40px 10px 40px;
+  outline: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+main .login .form-login form .form-item i {
+  position: absolute;
+  bottom: 18px;
+}
+main .login .form-login form .form-item .icon1 {
+  left: 10px;
+}
+main .login .form-login form .form-item .icon2 {
+  right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  main .login .form-login {
+    width: 90%;
+  }
+}
+@keyframes alertLogin {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}

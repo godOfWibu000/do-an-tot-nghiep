@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@300&display=swap");
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bdc3c7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+
+.slick-prev:before, .slick-next:before{
+  font-family: fontawesome;
+  border-radius: 50%;
+  background-color: var(--main-color-2);
+  font-size: 30px;
+}
+.slick-prev:before{
+  content: '\f053';
+  padding: 5px 10px 5px 7px;
+  position: relative;
+  right: 20px;
+}
+.slick-next:before{
+  content:'\f054';
+  padding: 5px 7px 5px 10px;
+}
+
+/* Effect & animation */
+.hover-opacity-08-05:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.hover-backcolor-cloud:hover {
+  background-color: #ecf0f1;
+  transition: 0.5s;
+}
+.a-none-hover:hover {
+  color: black;
+}
+
+/* Pop up */
+.cua-so {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3000;
+  overflow: auto;
+  display: none;
+}
+.cua-so-40 {
+  width: 40%;
+  height: 60vh;
+  margin: 20vh 30%;
+}
+.cua-so-60 {
+  width: 60%;
+  height: 60vh;
+  margin: 10vh 20%;
+}
+.cua-so-80 {
+  width: 80%;
+  height: 80vh;
+  margin: 10vh 10%;
+}
+.nen-cua-so {
+  width: 100%;
+  height: 120vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+main {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 1600px;
+  margin: auto;
+}
+
+header {
+  height: 500px;
+  background-image: url("https://cdn.sforum.vn/sforum/wp-content/uploads/2022/07/1-12.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+header .header{
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+header .nav {
+  padding: 5px 2%;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 3000;
+}
+header .nav .nav-item {
+  margin: auto 0;
+}
+header .nav .nav-right .menu {
+  transition: 0.5s;
+}
+header .nav .nav-right .menu ul li {
+  display: block;
+}
+header .nav .nav-right .menu ul li:hover a {
+  color: white;
+}
+header .nav .nav-right .menu .nav-item-account i {
+  position: relative;
+  top: 5px;
+}
+header .sticky {
+  background-color: rgba(0, 0, 0, 0.3);
+  animation-name: headerSticky;
+  animation-duration: 1s;
+  opacity: 1;
+}
+header .search-form {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+header .search-form form {
+  width: 60%;
+  left: 20%;
+}
+header .cua-so-tai-khoan {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: fixed;
+  z-index: 3000;
+  top: 55px;
+  right: 20px;
+}
+header .cua-so-tai-khoan h5 {
+  padding: 10px;
+}
+header .cua-so-tai-khoan .dang-xuat {
+  background-color: #bdc3c7;
+}
+header .cua-so-tai-khoan h5:hover {
+  background-color: #ecf0f1;
+  transition: 0.5s;
+}
+
+.side-bar .search {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  bottom: 30px;
+}
+.side-bar .search .tim-khu-vuc input {
+  padding-left: 40px;
+}
+.side-bar .search .tim-khu-vuc i {
+  position: absolute;
+  bottom: 17px;
+  left: 10px;
+}
+.side-bar .search .chon-loai-hinh {
+  margin: 0 20px;
+}
+.side-bar .search .chon-loai-hinh label {
+  position: relative;
+  bottom: 1px;
+  margin-right: 20px;
+}
+#provinces-search{
+  z-index: 2000;
+  height: 200px;
+  overflow: auto;
+}
+
+footer .footer-top {
+  height: 500px;
+}
+footer .footer-bot {
+  height: 300px;
+}
+
+.ds-cho-nghi-noi-bat{
+  width: 90%;
+  margin: auto;
+}
+.save-hotel {
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+.ds-cho-nghi-noi-bat .cho-nghi-noi-bat{
+  width: 25%;
+}
+.ds-cho-nghi-noi-bat .cho-nghi-noi-bat .noi-dung{
+  height: 180px;
+}
+.ds-cho-nghi-noi-bat .cho-nghi-noi-bat .hinh-thu-nho {
+  position: relative;
+}
+.ds-cho-nghi-noi-bat .cho-nghi-noi-bat .hinh-thu-nho button {
+  position: absolute;
+  top: 100px;
+  left: 30%;
+  opacity: 0;
+}
+.ds-cho-nghi-noi-bat .cho-nghi-noi-bat:hover .hinh-thu-nho img {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.ds-cho-nghi-noi-bat .cho-nghi-noi-bat:hover .hinh-thu-nho button {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.uu-dai-container .uu-dai {
+  width: 49%;
+}
+.uu-dai-container .uu-dai-1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+.danh-muc-container .ds-danh-muc{
+    /* width: 100%; */
+    gap: 1%;
+}
+.danh-muc-container .ds-danh-muc .danh-muc{
+  width: 19%;
+}
+.danh-muc-container .ds-danh-muc .danh-muc h4{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  height: 100px;
+  width: 100%;
+}
+
+@media screen and (max-width: 4096px) {
+  #toggle {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav .nav-right, .nav .nav-right .menu, .nav .nav-right .menu ul, .nav .nav-right .menu .nav-item-account {
+    flex-direction: column;
+  }
+  .nav .nav-right {
+    flex-direction: column;
+  }
+  .nav .nav-right .menu {
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 100vh;
+    padding: 100px 0 0 10px;
+    position: absolute;
+    background-color: #0984e3;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+  }
+  .nav .nav-right .menu ul {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+  .nav .nav-right .menu ul li {
+    border-bottom: 1px solid white;
+    padding: 0;
+    height: 60px;
+  }
+  .nav .nav-right .menu ul li a {
+    display: block;
+  }
+  .nav .nav-right .menu .nav-item-account {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+  }
+  #toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  .side-bar .search {
+    width: 98%;
+  }
+  .side-bar .search .tim-khu-vuc {
+    width: 100%;
+  }
+  .side-bar .search .tim-khu-vuc input {
+    width: 100%;
+  }
+  .uu-dai-container .uu-dai {
+    width: 100%;
+  }
+
+  .danh-muc-container .ds-danh-muc .danh-muc{
+    width: 49%;
+  }
+}
+@keyframes headerSticky {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

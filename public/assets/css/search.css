@@ -1,0 +1,107 @@
+header{
+    height: 55px;
+    background: none;
+}
+header .nav{
+    background-color: var(--main-color-1);
+}
+.side-bar{
+    position: relative;
+    top: 50px;
+    margin-bottom: 40px;
+}
+.filter{
+    width: 28%;
+    height: calc(90vh);
+    margin-left: 1%;
+    transition: 0.5s;
+    position: relative;
+    float: left;
+    position: sticky;
+    top: 55px;
+}
+.filter .close{
+    font-size: 35px;
+    padding: 5px 2px 5px 5px;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    display: none;
+}
+.filter .filter-content{
+    height: 100%;
+    overflow: auto;
+}
+.filter .filter-content .submit-filter{
+    position: sticky;
+    bottom: 0;
+}
+#toggle-filter{
+    display: none;
+}
+
+.search-content{
+    float: left;
+    width: 70%;
+    margin-left: 1%;
+}
+.search-content .hotels-list .hotel{
+    
+}
+.search-content .hotels-list .hotel .left{
+    width: 20%;
+    float: left;
+}
+.search-content .hotels-list .hotel .right{
+    width: 80%;
+    padding-left: 2%;
+    float: left;
+}
+.search-content .hotels-list .hotel .information-hotel{
+    float: right;
+    width: 78%;
+    margin-left: 2%;
+}
+.search-content .hotels-list .hotel .information-hotel .content{
+    padding: 5px 2%;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .filter{
+        width: 80%;
+        height: 95vh;
+        position: fixed;
+        top: 50px;
+        left: -5px;
+        z-index: 2000;
+        transform: translateX(-120%);
+    }
+    #toggle-filter{
+        display: block;
+    }
+    .filter .close{
+        display: block;
+    }
+    .search-content{
+        width: 100%;
+    }
+    .search-content .hotels-list .hotel .left{
+        width: 30%;
+    }
+    .search-content .hotels-list .hotel .right{
+        width: 70%;
+    }
+    .search-content .hotels-list .hotel .right .title{
+        width: 100%;
+    }
+    .search-content .hotels-list .hotel .information-hotel{
+        width: 100%;
+        text-align: right;
+    }
+    .search-content .hotels-list .hotel .information-hotel .type-rooms-list,
+    .search-content .hotels-list .hotel .information-hotel .price{
+        width: 100%;
+    }
+}

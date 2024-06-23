@@ -1,0 +1,81 @@
+header{
+    height: 55px;
+    background: none;
+}
+header .nav{
+    background-color: var(--main-color-1);
+}
+.side-bar{
+    position: relative;
+    top: 50px;
+    margin-bottom: 40px;
+}
+
+/* Hotel */
+.hotel .infor-hotel .left, .hotel .infor-hotel .images-hotel{
+    width: 50%;
+    padding: 0 2% 30px 2%;
+}
+.hotel .infor-hotel .images-hotel .image{
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.hotel .description-rate-and-book{
+    
+}
+.hotel .description-and-book .description-hotel{
+}
+.hotel .description-and-book .book{
+}
+
+.rates-hotel .rates-list{
+    margin: auto;
+    margin-bottom: 20px;
+}
+.rates-hotel .rates-list .comment{
+    height: 200px;
+    overflow-y: auto;
+}
+.rates-hotel .rates-list .rate .user .avatar, .rates-hotel .rates-list .rate .user h5{
+    display: inline-block;
+}
+.rates-hotel .rates-list .rate .user .avatar{
+    border-radius: 50%;
+    padding: 3px 4px;
+}
+.rates-hotel .rates-list .rate .user h5{
+    
+}
+.rates-hotel .rate-form{
+    margin: 20px;
+}
+
+.rates-hotel .all-rates{
+    width: 60%;
+    height: 90vh;
+    position: fixed;
+    top: 55px;
+    right: 0;
+    transform: translateX(120%);
+    transition: 0.5s;
+    z-index: 1000;
+}
+.rates-hotel .all-rates .close{
+    left: -35px;
+    top: 20px;
+}
+.rates-hotel .all-rates .content{
+    height: 100%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 768px){
+    .hotel .infor-hotel .left, .hotel .infor-hotel .left, .hotel .infor-hotel .images-hotel{
+        width: 100%;
+    }
+
+    .hotel .description-and-book .description-hotel,.hotel .description-and-book .book{
+        width: 100%;
+    }
+}

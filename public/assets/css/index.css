@@ -1,0 +1,41 @@
+.ds-diem-den {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.ds-diem-den .diem-den h4{
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.ds-loai-hinh-cho-thue .loai-hinh-cho-thue {
+  width: 18%;
+  margin: 10px 1%;
+}
+
+.ds-loai-hinh-du-lich button {
+  width: 150px;
+  border: none;
+  background-color: #f5f6fa;
+  margin: 10px;
+}
+.ds-loai-hinh-du-lich .button1 {
+  border: 2px solid #0984e3;
+}
+.ds-loai-hinh-du-lich button:hover {
+  background-color: #ecf0f1;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .ds-loai-hinh-cho-thue .loai-hinh-cho-thue {
+    width: 48%;
+    margin: 10px 1%;
+  }
+
+  .ds-diem-den {
+    grid-template-columns: auto auto;
+  }
+}

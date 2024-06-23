@@ -1,0 +1,18 @@
+.flex{
+    display: flex;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .box{
+    padding: 10px 1%;
+}
+.tim-kiem{
+    display: flex;
+    justify-content: space-between;
+}
+.tim-kiem .form-tim-kiem{
+    display: flex;
+}
